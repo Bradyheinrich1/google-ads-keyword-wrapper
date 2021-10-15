@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: rgb(0,219,222);
+    background: linear-gradient(90deg, rgba(0,219,222,1) 0%, rgba(252,0,255,1) 100%);
+}
+
+.container {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    margin: 35px;
+}
+
+.input-box {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    min-width: 250px;
+    min-height: 275px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    -webkit-box-shadow: -5px 2px 64px -1px rgba(0,0,0,0.33);
+    -moz-box-shadow: -5px 2px 64px -1px rgba(0,0,0,0.33);
+    box-shadow: -5px 2px 64px -1px rgba(0,0,0,0.33);
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+
+.output-box {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    min-width: 250px;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    -webkit-box-shadow: -5px 2px 64px -1px rgba(0,0,0,0.33);
+    -moz-box-shadow: -5px 2px 64px -1px rgba(0,0,0,0.33);
+    box-shadow: -5px 2px 64px -1px rgba(0,0,0,0.33);
+    border-radius: 25px;
+    padding: 15px;
+    margin: 15px;
+}
+
+.input-box textarea {
+    border: none;
+    font-size: 18px;
+    resize: none;
+}
+
+.output-box textarea {
+    border: none;
+    font-size: 18px;
+    resize: none;
+}
+
+.input-box textarea:focus {
+    outline: none;
+}
+
+.output-box textarea:focus {
+    outline: none;
+}
+
+.main-input {
+    width: 100%;
+    max-width: 450px;
+    min-height: 250px;
+    resize: none;
+    padding: 15px;
+}
+
+.main-output {
+    width: 400px;
+    height: 200px;
+}
+
+.type-selectors {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.type-selectors p {
+    padding: 5px;
+    margin: 5px;
+}
+
+.type-selectors input {
+    padding: 5px;
+    margin: 5px;
+}
+
+.main-btn {
+    background: white;
+    color: black;
+    border: 2px solid rgba(252,0,255,1);
+    border-radius: 30px;
+    padding: 5px 75px;
+    margin: 5px 5px 20px 5px;
+    font-size: 15px;
+}
+
+.main-btn:hover {
+    background: #eee;
+}
+
+.main-btn:focus {
+    outline: none;
+}
+
+.copy-btn {
+    background: white;
+    color: black;
+    border: 2px solid rgba(252,0,255,1);
+    border-radius: 30px;
+    padding: 5px 75px;
+    margin: 15px 5px 25px 5px;
+    font-size: 15px;
+}
+
+.copy-btn:focus {
+    outline: none;
+}
+
+.hvr-sweep-to-right {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  .hvr-sweep-to-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(252,0,255,1);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    overflow: hidden;
+  }
+  .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+    color: white;
+    overflow: hidden;
+    
+  }
+  .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    overflow: hidden;
+    border-radius: 30px;
+  }
+
+  

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyword Wrapper</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+<div class="container">
+    <div class="input-box">
+
+        <textarea name="main-input" id="main-input" class="main-input" cols="30" rows="10" placeholder="Enter One Keyword Per Line..."></textarea>
+
+        <p>What match types?</p>
+        <div class="type-selectors">
+        <p>Broad:</p> <input type="checkbox" id="broadCheck" checked>
+
+        <p>Modified:</p> <input type="checkbox" id="modifiedCheck" checked>
+
+        <p>Phrase:</p> <input type="checkbox" id="phraseCheck" checked>
+
+        <p>Exact:</p> <input type="checkbox" id="exactCheck" checked>
+        </div>
+        <button class="main-btn hvr-sweep-to-right" id="main-btn">Create Keywords</button>
+    </div>
+
+    <div class="output-box">
+        <textarea readonly class="main-output" id="main-output"></textarea>
+        <button class="copy-btn hvr-sweep-to-right" id="copy-btn">Copy to Clipboard</button>
+    </div>
+
+</div>
+
+<script src="./app.js"></script>
+    
+</body>
+</html>
